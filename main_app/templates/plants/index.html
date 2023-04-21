@@ -5,10 +5,10 @@
 
 <div class="row">
 {% for plant in plants %}
-  <div class="col s12 m6 12">
+  <div class="col s6 m4">
     <div class="height-full">
       <a href="{% url 'detail' plant.id %}">
-        <div class="card">
+        <div class="card small z-depth-3 rounded card-hover">
           <div class="card-content">
             <span class="card-title">{{ plant.name }}</span>
             <p>Type: {{ plant.breed }}</p>

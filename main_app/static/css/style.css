@@ -1,7 +1,16 @@
+* {
+  font-family: sans-serif;
+}
+
+h1, h2, h3 {
+  color: #333333;
+}
+
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-color: #F1FFE7;
 }
 
 main {
@@ -11,4 +20,21 @@ main {
 footer.page-footer {
   padding-top: 0;
   text-align: right;
+}
+
+.card-content {
+  color: #333333;
+}
+
+.card-hover:hover {
+  background-color: #93C572;
+}
+
+.nav-wrapper, .page-footer {
+  background-color: #93C572;
+  color: #333333;
+}
+
+.right a {
+  color: #333333;
 }

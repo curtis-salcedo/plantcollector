@@ -5,10 +5,10 @@
 
 <div class="row">
 {% for plant in plants %}
-  <div class="col s6 m4">
-    <div class="height-full">
-      <a href="{% url 'detail' plant.id %}">
-        <div class="card small z-depth-3 rounded card-hover">
+<div class="col s6 m4">
+    <a href="{% url 'detail' plant.id %}">
+      <div class="card medium z-depth-3 rounded card-hover">
+          <div class="height-full">
           <div class="card-content">
             <span class="card-title">{{ plant.name }}</span>
             <p>Type: {{ plant.breed }}</p>
@@ -16,13 +16,21 @@
             <!-- {% if plant.maturity > 0 %}
               <p>Time until fruit: {{ plant.maturity }}</p>
               {% else %}
-              <p>Age: Kitten</p>
+              <p>Age: young</p>
               {% endif %} -->
             </div>
-          </a>
+          </div>
+          <table id="feed-summary">
+            <tr>
+              <td>Last Watered</td>
+              <td>Last Fertilized</td>
+            </tr id="feed-sum">
+            <td>{% if plant.water_check.date %} {{plant.water_check.date}} {% else %} Never {% endif %}</td>
+<!-- FERTILIZER WAS HERE -->
+          </table>
         </div>
       </div>
-    </div>
+    </a>
     {% endfor %}
   </div>
 

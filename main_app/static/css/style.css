@@ -38,3 +38,22 @@ footer.page-footer {
 .right a {
   color: #333333;
 }
+
+.card {
+  padding: 1%;
+}
+
+.add-watering {
+  display: flex;
+  align-items: center;
+}
+
+#feed-summary {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#feed-sum {
+  text-align: center;
+}

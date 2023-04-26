@@ -9,6 +9,7 @@
   <title>Plant Collector</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}?v=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <style>
     .btn, .btn-large {
       background-color: #c8e6c9;
@@ -24,8 +25,10 @@
         </ul>
         <ul class="right">
           <li><a href="{% url 'about' %}">About</a></li>
-          <li><a href="{% url 'plants_create' %}">Add a Plant</a></li>
+          <li><a href="{% url 'fertilizers_index' %}">Fertilizers</a></li>
+          <li><a href="{% url 'fertilizers_create' %}">Add Fertilizers</a></li>
           <li><a href="{% url 'index' %}">Plants</a></li>
+          <li><a href="{% url 'plants_create' %}">Add Plants</a></li>
         </ul>
       </div>
     </nav>
